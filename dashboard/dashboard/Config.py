@@ -1,6 +1,6 @@
 # weather
 icon_base_url = 'http://openweathermap.org/img/wn/'
-open_weather_map_api_key = '167086ef3f94ff48523300bca429ae49'
+open_weather_map_api_key = '<INSERT_API_KEY_HER>'
 lat = '52.155'
 lon = '5.388'
 units = 'metric'
