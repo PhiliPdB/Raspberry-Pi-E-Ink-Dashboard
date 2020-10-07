@@ -1,6 +1,11 @@
+from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # weather
 icon_base_url = 'http://openweathermap.org/img/wn/'
-open_weather_map_api_key = '<INSERT_API_KEY_HER>'
+open_weather_map_api_key = getenv("OPEN_WEATHER_MAP_API_KEY")
 lat = '52.155'
 lon = '5.388'
 units = 'metric'
