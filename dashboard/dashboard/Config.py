@@ -1,14 +1,14 @@
 # weather
 icon_base_url = 'http://openweathermap.org/img/wn/'
-open_weather_map_api_key = 'your_api_key'
-lat = '40.71'
-lon = '-74.00'
-units = 'imperial'
-unit_letter = 'F'
+open_weather_map_api_key = '167086ef3f94ff48523300bca429ae49'
+lat = '52.155'
+lon = '5.388'
+units = 'metric'
+unit_letter = 'C'
 
 # covid
-country = 'us'
-covid_url = 'https://corona.lmao.ninja/v2/'
+country = 'nl'
+covid_url = 'https://disease.sh/v3/covid-19/'
 
 # fonts
 small_font_size = 14
