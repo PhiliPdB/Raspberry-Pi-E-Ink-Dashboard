@@ -6,13 +6,13 @@ load_dotenv()
 # weather
 icon_base_url = 'http://openweathermap.org/img/wn/'
 open_weather_map_api_key = getenv("OPEN_WEATHER_MAP_API_KEY")
-lat = '52.155'
-lon = '5.388'
-units = 'metric'
+lat = getenv("LAT")
+lon = getenv("LON")
+units = getenv("UNITS")
 unit_letter = 'C'
 
 # covid
-country = 'nl'
+country = getenv("COUNTRY")
 covid_url = 'https://disease.sh/v3/covid-19/'
 
 # fonts
