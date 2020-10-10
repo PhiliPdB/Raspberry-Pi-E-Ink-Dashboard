@@ -31,8 +31,8 @@ def print_covid():
 		covid_local['today_deaths'] = covid_yesterday['today_deaths']
 
 	covid_icon = get_enhanced_icon('assets/covid/covid.jpeg', 45, False)
-	global_icon = get_enhanced_icon('assets/covid/globe.jpeg', 25, False)
-	local_icon = get_enhanced_icon('assets/covid/' + country + '.jpeg', 25, False)
+	global_icon = get_enhanced_icon('assets/covid/total.jpg', 25, False)
+	local_icon = get_enhanced_icon('assets/covid/today.jpg', 25, False)
 	cough_icon = get_enhanced_icon('assets/covid/cough.jpeg', 22, False)
 	skull_icon = get_enhanced_icon('assets/covid/skull.jpeg', 22, False)
 
