@@ -4,6 +4,7 @@ from dashboard.Covid import print_covid
 from dashboard.Date import print_date
 from dashboard.Image import epd, h_black_image, h_red_image
 from dashboard.Speed import print_speed
+from dashboard.PSUtil import print_stats
 from dashboard.Weather import print_weather
 
 
@@ -24,11 +25,13 @@ def gather_data():
 	print_covid()
 	toc = time.perf_counter()
 	print(f"took {toc - tic:0.4f} seconds")
-	print("\tGathering speed data... ", end='')
-	tic = time.perf_counter()
-	print_speed()
-	toc = time.perf_counter()
-	print(f"took {toc - tic:0.4f} seconds")
+
+	print_stats()
+	# print("\tGathering speed data... ", end='')
+	# tic = time.perf_counter()
+	# print_speed()
+	# toc = time.perf_counter()
+	# print(f"took {toc - tic:0.4f} seconds")
 
 
 def print_data():
@@ -42,7 +45,6 @@ def print_data():
 	tic = time.perf_counter()
 	epd.display(epd.getbuffer(h_black_image), epd.getbuffer(h_red_image))
 	toc = time.perf_counter()
-	print(f"took {toc - tic:0.4f} seconds")
 
 
 def main():
